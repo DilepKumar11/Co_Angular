@@ -6,7 +6,7 @@
 <div class="poplayer" [ngClass]="{'popupshow' : showpopup  }">
     <div class="centerpopup">
       <button class="popclose" (click)="closepopup()"><span class="icon-cancel icomoon"></span></button>
-      <a (click)="closepopup()" [href]="onLoadNotifications?.imageURL"><img *ngIf="onLoadNotifications?.isImage" [src]="onLoadNotifications?.imagePath" /></a>
+      <a (click)="closepopup()" [href]="onLoadNotifications?.imageURL"><img  *ngIf="onLoadNotifications?.isImage" [src]="onLoadNotifications?.imagePath" /></a>
       <div class="popmsgcontent" *ngIf="onLoadNotifications?.message && !onLoadNotifications?.isImage">{{onLoadNotifications.message}}</div>
     </div>
   

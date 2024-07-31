@@ -1,11 +1,11 @@
 <div class="app-product-item">
     <figure class="product-item-figure">
         <!-- <a [routerLink]="'/product-detail/' + Productvalue.seoProductName" > -->
-        <a [routerLink]="'/'+city + '/send-online/' + Productvalue.seoProductName">
-            <!-- hyderabad/send-online/ -->
-            <img src="{{Productvalue.imageURL}}" alt="{{Productvalue.altProductName}}" title="{{Productvalue.altProductName}}" class="img-fluid w-100">
-            <span class="tagbadge" *ngIf="tagMsg" [class]="tagClass">{{tagMsg}}</span>
-        </a>
+      <a [routerLink]="'/'+city + '/send-online/' + Productvalue.seoProductName">
+        <!-- hyderabad/send-online/ -->
+        <img src="{{Productvalue.imageURL}}" alt="{{Productvalue.altProductName}}" title="{{Productvalue.altProductName}}" class="img-fluid w-100">
+        <span class="tagbadge" *ngIf="tagMsg" [class]="tagClass">{{tagMsg}}</span>
+      </a>
         <!-- <span class="seller-label">{{Productvalue.productName}}</span> -->
     </figure>
     <div class="item-title p-2 p-md-3 bg-white">

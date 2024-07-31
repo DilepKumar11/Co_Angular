@@ -243,7 +243,7 @@ decrementbtn:boolean=false
       if (this.currencySelected == 'INR') {
         if (this.firstlistItem?.totalAmount <= 250) {
           this.outofdatemessage = true;
-          this.MinCartMessage = "Minimum Cart Value is greater than 250";
+          this.MinCartMessage = "Minimum Cart Value is 250";
         }
         else {
           this.outofdatemessage = this.cartItems.some((item: { outOfDateMessage: any; }) => item.outOfDateMessage);
@@ -253,7 +253,7 @@ decrementbtn:boolean=false
       {
         if (this.firstlistItem?.totalAmount <= 250/80) {
           this.outofdatemessage = true;
-          this.MinCartMessage = "Minimum Cart Value is greater than 3$";
+          this.MinCartMessage = "Minimum Cart Value is 3$";
         }
         else {
           this.outofdatemessage = this.cartItems.some((item: { outOfDateMessage: any; }) => item.outOfDateMessage);

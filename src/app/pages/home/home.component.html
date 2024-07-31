@@ -9,7 +9,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item" *ngFor="let b of banners; let i = index" [class.active]="i === 0">
-                <img [src]="b.imageName" [alt]="b.name" [title]="b.name" [height]="549" [width]="1920" (click)="gotoroute(b.type, b.seoName)" 
+                <img  [src]="b.imageName" [alt]="b.name" [title]="b.name" [height]="549" [width]="1920" (click)="gotoroute(b.type, b.seoName)" 
                     class="img-fluid w-100">
             </div>
             

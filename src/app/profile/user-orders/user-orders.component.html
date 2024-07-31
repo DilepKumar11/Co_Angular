@@ -44,7 +44,7 @@
                     <div class="row pb-2 border-bottom pt-2" *ngFor="let innerorder of order.myOrderProductsDtos">
                         <div class="col-md-2 col-lg-1  col-3">
                             <a (click)="gotoorders(order.orderId)" href="javascript:;">
-                                <img src="{{innerorder.smallimageurl}}" alt="" class="img-fluid">
+                                <img  src="{{innerorder.smallimageurl}}" alt="" class="img-fluid">
                             </a>
                         </div>
                         <div class="col-md-10 col-lg-11 col-9">
@@ -124,7 +124,7 @@
 
             <div class="static-page" *ngIf="orderDetails?.length ==0">
                 <div class="Noproducts">
-                    <img src="/src/assets/images/noproducts.svg" alt="No Products" class="img-fluid w-100">
+                    <img  src="/src/assets/images/noproducts.svg" alt="No Products" class="img-fluid w-100">
                     <h3>No Orders Found</h3>
                     <p>Please Visit Again or Continue Shopping</p>
                     <a class="color-btn" href="/">Continue Shopping</a>
